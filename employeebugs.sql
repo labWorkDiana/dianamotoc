@@ -28,6 +28,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `account`
 --
 
+USE employeebugs;
+
 CREATE TABLE `account` (
   `idAccount` int(11) NOT NULL,
   `username` varchar(255) NOT NULL
