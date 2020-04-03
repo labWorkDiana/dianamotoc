@@ -4,9 +4,8 @@ jdk:
   - openjdk11
 sudo: enabled
 services:
-  -mysql
+  - mysql
 before_install:
-  -sudo mysql -e 'CREATE DATABASE employeebugs;'
-  -sudo mysql < "employeebugs.sql"
-script:
-  - mvn clean install
+  - sudo mysql -e 'CREATE DATABASE employeebugs;'
+  - sudo mysql < "employeebugs.sql"
+script: mvn clean install
