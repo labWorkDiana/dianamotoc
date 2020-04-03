@@ -8,4 +8,4 @@ services:
 before_install:
   - sudo mysql -e 'CREATE DATABASE employeebugs;'
   - sudo mysql < "employeebugs.sql"
-script: mvn clean install
+script: mvn clean verify
